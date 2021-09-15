@@ -436,8 +436,7 @@ function tokenizer(input) {
     //
     // So here we're just going to test for existence and if it does exist we're
     // going to just `continue` on.
-    let WHITESPACE = /\s/;
-    if (WHITESPACE.test(char)) {
+    if (char === " ") {
       current++;
       continue;
     }
